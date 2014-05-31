@@ -1,0 +1,146 @@
+#header {
+  z-index: 1000;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #2B3E50;
+  text-align: center;
+  border-bottom: 1px solid #263544;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-default {
+  background-color: transparent;
+}
+
+@media (min-width: 768px){
+    .navbar-nav {
+        float: none;
+        display: table;
+        margin: 0 auto;
+        table-layout: fixed;
+    }
+}
+
+#content {
+  margin-top: 100px
+}
+
+
+/* Pages */
+.page {
+  padding: 100px 0;
+  /* Einheit "vh" heißt viewport-height */
+  min-height: 100vh;
+}
+
+#page-home {
+  background-color: #457393;
+}
+
+#page-about {
+  background-color: #333;
+}
+
+#page-projects {
+  background-color: #2F88A7;
+}
+
+#page-contact {
+  background-color: #7ECEFD;
+}
+
+#page-impressum {
+  background-color: #666;
+}
+
+/* Projects */
+.project {
+  margin: 10px 0;
+}
+.project img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .project {
+    position: relative;
+    cursor: default;
+  }
+  .project-overlay {
+    transition: opacity ease 0.5s;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.8);
+    margin: 5px;
+  }
+  .project:hover .project-overlay,
+  .project:focus .project-overlay {
+    opacity: 1;
+  }
+}
+/*
+
+#navigation {
+  background-color: #34495E;
+  color: white;
+  height: 45px;
+}
+
+#navigation ul {
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#navigation ul li {
+  display: inline;
+}
+
+#navigation ul li a {
+  font-size: 20px;
+  padding: 0px 20px;
+  color: white;
+}
+
+
+  
+.page-padding {
+  height:210px; 
+  width:100%;
+}
+
+.ul-content {
+  margin-left: 40px;
+}
+
+.ul-projects {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.ul-projects li {
+  padding-bottom: 10px;
+}
+
+.p-projects {
+  padding: 0;
+  font-weight: normal;
+}
+
+.p-projects strong {
+  padding: 0;
+}
+
+#skills p {
+  color: white;
+}
+*/
