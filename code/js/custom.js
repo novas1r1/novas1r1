@@ -120,3 +120,16 @@ $('#validateButton').click(function() {
 	$('#contactForm').bootstrapValidator('validate');
 });
 
+// sending message successfull user feedback
+$('#sendButton').click(function() {
+    var data = $('#contactForm').serialize();
+    $.ajax({
+        type: "POST",
+        url: "content/contact-form-submission.php",
+        data: data,
+        success:function(result){
+            $( '#success' ).removeClass("done").addClass( "doneSuccess" );
+        }
+    });
+});
+

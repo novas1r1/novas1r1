@@ -129,4 +129,13 @@ h2 {
   .project:focus .project-overlay {
     opacity: 1;
   }
+
+  .done {
+    display:none;
+  }
+
+  .doneSuccess {
+    display:block;
+    font-size:60px
+  }
 }
