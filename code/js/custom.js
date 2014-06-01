@@ -76,6 +76,16 @@ feedbackIcons: {
 	invalid: 'glyphicon glyphicon-remove',
 	validating: 'glyphicon glyphicon-refresh'
 },
+submitHandler: function(validator, form, submitButton) {
+            // Show the modal
+            $('#success-popup')
+                .find('.alert').html('Thanks :)!').end()
+                .modal('show');
+
+            $('#contactForm')
+                .bootstrapValidator('disableSubmitButtons', false)  // Enable the submit buttons
+                .bootstrapValidator('resetForm', true);             // Reset the form
+},
 fields: {
 	inputName: {
 		validators: {
@@ -113,37 +123,6 @@ fields: {
 		}
 	}
 }
-});
-
-// clear form data
-function clearFormData(ele) {
-    $(ele).find(':input').each(function() {
-        switch(this.type) {
-            case 'email':
-            case 'text':
-            case 'textarea':
-                $(this).val('');
-                break;
-        }
-    });
-
-    //restart validation
-    $('#contactForm').bootstrapValidator('resetForm', true);
-}
-
-// sending message successfull user feedback
-$('#sendButton').click(function() {
-    var data = $('#contactForm').serialize();
-    $.ajax({
-        type: "POST",
-        url: "content/contact-form-submission.php",
-        data: data,
-        success:function(result){
-            $( '#success' ).removeClass("done").addClass( "doneSuccess" );
-        }
-    });
-    clearFormData('#contactForm');
-
 });
 
 

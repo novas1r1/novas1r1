@@ -2,12 +2,22 @@ Please feel free to leave me a message or visit me on <a href="http://de.linkedi
 
 <br>
 <br>
-<div id="success" class="done">
-  <div class="alert alert-dismissable alert-success">
-  <button type="button" class="close" data-dismiss="alert">×</button>
-  Thanks for your message =)!
-</div>
-</div>
+    <!-- The modal -->
+    <div class="modal fade" id="success-popup">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Message successfully sent</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="welcome">
+                      Thanks for your message! I'll replay as soon as possible :)!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <section>
   <form id="contactForm" method="post" class="form-horizontal" action="content/contact-form-submission.php">
     <div class="form-group">
@@ -37,8 +47,7 @@ Please feel free to leave me a message or visit me on <a href="http://de.linkedi
 
     <div class="form-group">
       <div class="col-lg-9 col-lg-offset-3">
-<!--         <button type="submit" id="sendButton" class="btn btn-primary" name="sendButton" value="Send">Send</button> -->
-<button id="sendButton" class="btn btn-primary" onclick="return false;">Send</button>
+        <button type="submit" id="sendButton" class="btn btn-primary" name="sendButton" value="Send">Send</button>
       </div>
     </div>
   </form>
