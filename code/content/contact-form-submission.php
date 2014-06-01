@@ -18,7 +18,4 @@ $message .='<b>Email :</b>'.$email."<br>";
 $message .='<b>Message :</b>'.$msg;
 
 mail($toemail, $subject, $message, $headers);
-
-header('Location: ../#page-contact');
-//echo "Thanks for contacting us!";
 ?>
