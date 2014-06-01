@@ -10,7 +10,6 @@
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
 </head>
 <body>
 	<!-- header -->
@@ -42,35 +41,35 @@
 	<div id="content">
 		<div id="page-home" class="page">
 			<div class="container">
-				<h2>home</h2>
+				<h1>home</h1>
 				<?php include("content/home.html") ?>
 			</div>
 		</div>
 
 		<div id="page-about" class="page">
 			<div class="container">
-				<h2>about</h2>
+				<h1>about</h1>
 				<?php include("content/about.html") ?>
 			</div>
 		</div>
 
 		<div id="page-projects" class="page">
 			<div class="container">
-				<h2>projects</h2>
+				<h1>projects</h1>
 				<?php include("content/projects.html") ?>
 			</div>
 		</div>	
 
 		<div id="page-contact" class="page">
 			<div class="container">
-				<h2>contact</h2>
+				<h1>contact</h1>
 				<?php include("content/contact.html") ?>
 			</div>
 		</div>
 
 		<div id="page-impressum" class="page">
 			<div class="container">
-			<h2>impressum</h2>
+			<h1>impressum</h1>
 				<?php include("content/impressum.html") ?>
 			</div>
 		</div>

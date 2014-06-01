@@ -25,6 +25,10 @@
     }
 }
 
+h2 {
+  margin: 30px 0px;
+}
+
 #content {
   margin-top: 100px
 }
@@ -42,7 +46,7 @@
 }
 
 .tools {
-  background-color: #4E5D6C;
+  background-color: #2B3E50;
   min-height: 100px;
   margin: 5px 0px;
 }
@@ -59,7 +63,7 @@
 }
 
 #page-about {
-  background-color: #333;
+  background-color: #485563;
 }
 
 #page-projects {
@@ -67,20 +71,22 @@
 }
 
 #page-contact {
-  background-color: #7ECEFD;
+  background-color: #4E5D6C;
 }
 
 #page-impressum {
-  background-color: #666;
+  background-color: #333;
 }
 
 /* Projects */
 .project {
   margin: 10px 0;
 }
+
 .project img {
   width: 100%;
 }
+
 @media screen and (min-width: 768px) {
   .project {
     position: relative;
@@ -95,69 +101,23 @@
     right: 0;
     bottom: 0;
     text-align: center;
-    padding: 10px;
+    padding: 2px 5px;
     background-color: rgba(0,0,0,0.8);
-    margin: 5px;
   }
+
+  .project-overlay a {
+    background-color: #DF691A;
+    color: white;
+    padding: 0px 10px;
+  }
+
+  .project-overlay a:hover {
+    background-color: #9F5A2C;
+    text-decoration: none;
+  }
+
   .project:hover .project-overlay,
   .project:focus .project-overlay {
     opacity: 1;
   }
 }
-/*
-
-#navigation {
-  background-color: #34495E;
-  color: white;
-  height: 45px;
-}
-
-#navigation ul {
-  text-align: center;
-  list-style-type: none;
-  padding-left: 0;
-}
-
-#navigation ul li {
-  display: inline;
-}
-
-#navigation ul li a {
-  font-size: 20px;
-  padding: 0px 20px;
-  color: white;
-}
-
-
-  
-.page-padding {
-  height:210px; 
-  width:100%;
-}
-
-.ul-content {
-  margin-left: 40px;
-}
-
-.ul-projects {
-  list-style-type: none;
-  font-weight: bold;
-}
-
-.ul-projects li {
-  padding-bottom: 10px;
-}
-
-.p-projects {
-  padding: 0;
-  font-weight: normal;
-}
-
-.p-projects strong {
-  padding: 0;
-}
-
-#skills p {
-  color: white;
-}
-*/
