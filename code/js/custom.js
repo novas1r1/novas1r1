@@ -115,10 +115,21 @@ fields: {
 }
 });
 
-// Validate the form manually
-$('#validateButton').click(function() {
-	$('#contactForm').bootstrapValidator('validate');
-});
+// clear form data
+function clearFormData(ele) {
+    $(ele).find(':input').each(function() {
+        switch(this.type) {
+            case 'email':
+            case 'text':
+            case 'textarea':
+                $(this).val('');
+                break;
+        }
+    });
+
+    //restart validation
+    $(ele).bootstrapValidator('validate');
+}
 
 // sending message successfull user feedback
 $('#sendButton').click(function() {
@@ -131,5 +142,10 @@ $('#sendButton').click(function() {
             $( '#success' ).removeClass("done").addClass( "doneSuccess" );
         }
     });
+    clearFormData('#contactForm');
+
 });
+
+
+
 
