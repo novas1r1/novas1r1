@@ -29,6 +29,23 @@
   margin-top: 100px
 }
 
+#skill-container {
+  text-align: center;
+}
+
+#workflow-container {
+  text-align: center;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.tools {
+  background-color: #4E5D6C;
+  min-height: 100px;
+  margin: 5px 0px;
+}
 
 /* Pages */
 .page {
