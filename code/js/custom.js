@@ -128,7 +128,7 @@ function clearFormData(ele) {
     });
 
     //restart validation
-    $(ele).bootstrapValidator('validate');
+    $('#contactForm').bootstrapValidator('resetForm', true);
 }
 
 // sending message successfull user feedback
