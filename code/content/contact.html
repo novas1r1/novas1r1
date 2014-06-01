@@ -1,0 +1,39 @@
+
+<form method="POST" action="content/contact-form-submission.php" class="form-horizontal">
+  <fieldset>
+    <legend>Please contact me =)</legend>
+    <div class="form-group">
+      <label for="inputName" class="col-lg-2 control-label">Name</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Name">
+        <div class="alert alert-dismissable alert-danger">
+        Please enter your name!
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email">
+        <div class="alert alert-dismissable alert-danger">
+         This is not a valid e-mail address!
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputMessage" class="col-lg-2 control-label">Your message</label>
+      <div class="col-lg-10">
+        <textarea class="form-control" rows="3" id="inputMessage" name="inputMessage"></textarea>
+        <div class="alert alert-dismissable alert-danger">
+        Please insert a message!
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+</form>

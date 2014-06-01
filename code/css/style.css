@@ -71,11 +71,16 @@ h2 {
 }
 
 #page-contact {
-  background-color: #4E5D6C;
+  background-color: #333;
+}
+
+.alert-danger {
+  margin: 5px 0px;
+  padding: 5px;
 }
 
 #page-impressum {
-  background-color: #333;
+  background-color: #4E5D6C;
 }
 
 /* Projects */
