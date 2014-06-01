@@ -1,39 +1,35 @@
-
-<form method="POST" action="content/contact-form-submission.php" class="form-horizontal">
-  <fieldset>
-    <legend>Please contact me =)</legend>
+<section>
+  <form id="contactForm" method="post" class="form-horizontal" action="content/contact-form-submission.php">
     <div class="form-group">
-      <label for="inputName" class="col-lg-2 control-label">Name</label>
-      <div class="col-lg-10">
-        <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Name">
-        <div class="alert alert-dismissable alert-danger">
-        Please enter your name!
-        </div>
+      <label class="col-lg-3 control-label">Name</label>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" name="inputName" placeholder="Name" />
       </div>
     </div>
     <div class="form-group">
-      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-      <div class="col-lg-10">
-        <input type="text" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email">
-        <div class="alert alert-dismissable alert-danger">
-         This is not a valid e-mail address!
-        </div>
+      <label class="col-lg-3 control-label">E-Mail</label>
+      <div class="col-lg-5">
+        <input type="text" class="form-control" name="inputEmail" placeholder="E-Mail"/>
       </div>
     </div>
     <div class="form-group">
-      <label for="inputMessage" class="col-lg-2 control-label">Your message</label>
-      <div class="col-lg-10">
+      <label class="col-lg-3 control-label">Your Message</label>
+      <div class="col-lg-5">
         <textarea class="form-control" rows="3" id="inputMessage" name="inputMessage"></textarea>
-        <div class="alert alert-dismissable alert-danger">
-        Please insert a message!
-        </div>
       </div>
     </div>
     <div class="form-group">
-      <div class="col-lg-10 col-lg-offset-2">
-        <button class="btn btn-default">Cancel</button>
-        <button type="submit" class="btn btn-primary">Submit</button>
+      <label class="col-lg-3 control-label" id="captchaOperation"></label>
+      <div class="col-lg-2">
+        <input type="text" class="form-control" name="captcha" placeholder="Please enter the result"/>
       </div>
     </div>
-  </fieldset>
-</form>
+
+    <div class="form-group">
+      <div class="col-lg-9 col-lg-offset-3">
+        <button type="submit" class="btn btn-primary" name="sendButton" value="Send">Send</button>
+        <button type="button" class="btn btn-info" id="validateButton">Manual validate</button>
+      </div>
+    </div>
+  </form>
+</section>
