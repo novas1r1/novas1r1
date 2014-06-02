@@ -59,9 +59,6 @@ $('.animateskillmeters').click(function(){
 		);
 })
 
-//validation
-
-
 // Generate a simple captcha
 function randomNumber(min, max) {
 	return Math.floor(Math.random() * (max - min + 1) + min);
@@ -69,71 +66,27 @@ function randomNumber(min, max) {
 
 $('#captchaOperation').html([randomNumber(1, 20), '+', randomNumber(1, 10), '='].join(' '));
 
-$('#contactForm').bootstrapValidator({
-//        live: 'disabled',
-message: 'This value is not valid',
-feedbackIcons: {
-	valid: 'glyphicon glyphicon-ok',
-	invalid: 'glyphicon glyphicon-remove',
-	validating: 'glyphicon glyphicon-refresh'
-},
-submitHandler: function(validator, form, submitButton) {
-	var data = $('#contactForm').serialize();
-	$.ajax({
-		type: "POST",
-		url:"content/contact-form-submission.php",
-		data: data,
-		success:function(result){
-            // Show the modal
-            $('#success-popup')
-            .find('.alert').html('Thanks !').end()
-            .modal('show');
-
-            $('#contactForm')
-                .bootstrapValidator('disableSubmitButtons', false)  // Enable the submit buttons
-                .bootstrapValidator('resetForm', true);             // Reset the form
-            }
-    });
-},
-fields: {
-	inputName: {
-		validators: {
-			notEmpty: {
-				message: 'The name is required and cannot be empty'
-			}
-		}
-	},
-	inputEmail: {
-		validators: {
-			notEmpty: {
-				message: 'The email address is required and cannot be empty'
-			},
-			emailAddress: {
-				message: 'The input is not a valid email address'
-			}
-		}
-	},
-	inputMessage: {
-		validators: {
-			notEmpty: {
-				message: 'The message is required and cannot be empty'
-			}
-		}
-	},
-	captcha: {
-		validators: {
-			callback: {
-				message: 'Wrong answer',
-				callback: function(value, validator) {
-					var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
-					return value == sum;
-				}
-			}
-		}
+//validation
+$('#contactForm').submit(function() {
+	//check if captcha is valid
+	var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
+	if($('#inputCaptcha').val() != sum) {
+		alert('captcha falsch');
+		return false;
 	}
-}
-});
 
+	$.get(
+		$('#contactForm').attr('action'), 
+		$('#contactForm').serialize(),
+		function(data) {
+			//clear form
+			$('#contactForm input, #contactForm textarea').val('');
 
+			$('#success-popup .modal-content').html(data);
 
-
+			//show popup
+            $('#success-popup').modal('show');
+		}
+	);
+	// return false;
+})

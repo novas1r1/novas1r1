@@ -6,42 +6,33 @@ Please feel free to leave me a message or visit me on <a href="http://de.linkedi
     <div class="modal fade" id="success-popup">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Message successfully sent</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="welcome">
-                      Thanks for your message! I'll reply as soon as possible :)!
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 <section>
-  <form id="contactForm" method="post" class="form-horizontal" action="content/contact-form-submission.php">
+  <form data-parsley-validate id="contactForm" method="post" class="form-horizontal"  action="content/contact-form-submission.php">
     <div class="form-group">
       <label class="col-lg-1 control-label">Name</label>
       <div class="col-lg-4">
-        <input type="text" class="form-control" name="inputName" placeholder="Name" />
+        <input type="text" class="form-control" name="inputName" data-parsley-required placeholder="Name" />
       </div>
     </div>
     <div class="form-group">
       <label class="col-lg-1 control-label">E-Mail</label>
       <div class="col-lg-5">
-        <input type="text" class="form-control" name="inputEmail" placeholder="E-Mail"/>
+        <input type="text" class="form-control" name="inputEmail" data-parsley-required data-parsley-type="email" placeholder="E-Mail"/>
       </div>
     </div>
     <div class="form-group">
       <label class="col-lg-1 control-label">Your Message</label>
       <div class="col-lg-5">
-        <textarea class="form-control" rows="3" id="inputMessage" name="inputMessage"></textarea>
+        <textarea class="form-control" rows="3" id="inputMessage" data-parsley-required name="inputMessage"></textarea>
       </div>
     </div>
     <div class="form-group">
-      <label class="col-lg-1 control-label" id="captchaOperation"></label>
+      <label class="col-lg-1 control-label" id="captchaOperation" data-parsley-required data-parsley-type="integer"></label>
       <div class="col-lg-2">
-        <input type="text" class="form-control" name="captcha" />
+        <input type="text" class="form-control" name="captcha" id="inputCaptcha"/>
       </div>
     </div>
 
@@ -51,4 +42,7 @@ Please feel free to leave me a message or visit me on <a href="http://de.linkedi
       </div>
     </div>
   </form>
+<script type="text/javascript">
+  $('#contactForm').parsley();
+</script>
 </section>
