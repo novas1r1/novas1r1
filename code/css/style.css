@@ -36,10 +36,6 @@ h2 {
   margin-bottom: 30px;
 }
 
-.h2-content {
-  margin-top: 30px;
-}
-
 #content {
   margin-top: 100px
 }
@@ -59,6 +55,12 @@ h2 {
 
 #page-about {
   background-color: #457393;
+}
+
+#page-about img {
+  float: left;
+  margin-right: 20px;
+  border: 1px solid #fff;
 }
 
 .skill {
