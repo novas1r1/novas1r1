@@ -1,8 +1,8 @@
 <?php
 
-$name = $_GET['inputName'];
-$email = $_GET['inputEmail'];
-$msg = $_GET['inputMessage'];
+$name = htmlspecialchars($_GET['inputName']);
+$email = htmlspecialchars($_GET['inputEmail']);
+$msg = htmlspecialchars($_GET['inputMessage']);
 
 $errors = array();
 
