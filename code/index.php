@@ -11,8 +11,8 @@
 	
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/parsley.js/1.2.3/parsley.min.js" type="text/javascript"></script>
-	
+	<script type="text/javascript" src="js/parsley.min.js"></script>
+
 </head>
 <body>
 	<!-- header -->

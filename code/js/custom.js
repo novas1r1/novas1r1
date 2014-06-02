@@ -71,7 +71,8 @@ $('#contactForm').submit(function() {
 	//check if captcha is valid
 	var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
 	if($('#inputCaptcha').val() != sum) {
-		alert('captcha falsch');
+		// alert('captcha falsch');
+		// div wenns falsch is
 		return false;
 	}
 
@@ -82,11 +83,12 @@ $('#contactForm').submit(function() {
 			//clear form
 			$('#contactForm input, #contactForm textarea').val('');
 
+			//display popup
 			$('#success-popup .modal-content').html(data);
 
 			//show popup
             $('#success-popup').modal('show');
 		}
 	);
-	// return false;
+	return false;
 })

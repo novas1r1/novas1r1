@@ -58,8 +58,8 @@ h2 {
 
 .tools {
   background-color: #2B3E50;
-  min-height: 100px;
   margin: 5px 0px;
+  padding: 35px 0;
 }
 
 /* Pages */
