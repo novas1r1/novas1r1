@@ -32,6 +32,14 @@ h2 {
   margin: 30px 0px;
 }
 
+.h1-content {
+  margin-bottom: 30px;
+}
+
+.h2-content {
+  margin-top: 30px;
+}
+
 #content {
   margin-top: 100px
 }
@@ -45,7 +53,7 @@ h2 {
 }
 
 .skill {
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 
 .tools {
@@ -63,11 +71,11 @@ h2 {
 }
 
 #page-home {
-  background-color: #457393;
+  background-color: #485563;
 }
 
 #page-about {
-  background-color: #485563;
+  background-color: #457393;
 }
 
 #page-projects {
@@ -78,9 +86,8 @@ h2 {
   background-color: #333;
 }
 
-.alert-danger {
-  margin: 5px 0px;
-  padding: 5px;
+.form-horizontal .control-label {
+  text-align:left;
 }
 
 #page-impressum {

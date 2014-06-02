@@ -43,35 +43,34 @@
 	<div id="content">
 		<div id="page-home" class="page">
 			<div class="container">
-				<h1>home</h1>
 				<?php include("content/home.html") ?>
 			</div>
 		</div>
 
 		<div id="page-about" class="page">
 			<div class="container">
-				<h1>about</h1>
+				<h1 class="h1-content">about</h1>
 				<?php include("content/about.html") ?>
 			</div>
 		</div>
 
 		<div id="page-projects" class="page">
 			<div class="container">
-				<h1>projects</h1>
+				<h1 class="h1-content">projects</h1>
 				<?php include("content/projects.html") ?>
 			</div>
 		</div>	
 
 		<div id="page-contact" class="page">
 			<div class="container">
-				<h1>contact</h1>
+				<h1 class="h1-content">contact</h1>
 				<?php include("content/contact.html") ?>
 			</div>
 		</div>
 
 		<div id="page-impressum" class="page">
 			<div class="container">
-			<h1>impressum</h1>
+			<h1 class="h1-content">impressum</h1>
 				<?php include("content/impressum.html") ?>
 			</div>
 		</div>
