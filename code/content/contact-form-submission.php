@@ -23,10 +23,10 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 if($errors) {
-	$responseTitle = 'hat nicht geklappt';
+	$responseTitle = 'Sorry, something went wrong! Please try again..';
 	$responseText = implode('<br>', $errors);
 } else {
-	$responseTitle = 'hat geklappt';
+	$responseTitle = 'Message successfully sent :)!';
 	$responseText = 'Thanks for your message! I\'ll reply as soon as possible :)';
 
 	$headers = "From: mail@verena-zaiser.de \r\n";

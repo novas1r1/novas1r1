@@ -143,6 +143,7 @@ h2 {
 .parsley-required {
   color: red;
   list-style-type: none;
+  font-size: 12px;
 }
 
 .parsley-errors-list {

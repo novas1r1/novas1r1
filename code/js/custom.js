@@ -59,7 +59,7 @@ $('.animateskillmeters').click(function(){
 		);
 })
 
-// Generate a simple captcha
+// generate a simple captcha
 function randomNumber(min, max) {
 	return Math.floor(Math.random() * (max - min + 1) + min);
 };
@@ -71,8 +71,9 @@ $('#contactForm').submit(function() {
 	//check if captcha is valid
 	var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
 	if($('#inputCaptcha').val() != sum) {
-		// alert('captcha falsch');
+		// alert('Captcha wrong! Pls try again :)!');
 		// div wenns falsch is
+		$('#captcha-control').attr('class', 'visible');
 		return false;
 	}
 
@@ -81,6 +82,7 @@ $('#contactForm').submit(function() {
 		$('#contactForm').serialize(),
 		function(data) {
 			//clear form
+			$('#captcha-control').attr('class', 'hidden');
 			$('#contactForm input, #contactForm textarea').val('');
 
 			//display popup
