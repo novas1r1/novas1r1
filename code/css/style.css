@@ -140,7 +140,12 @@ h2 {
 
 /* parsley */
 
-.parsley-required {
+#captcha-control {
+  font-size: 12px;
+  color: red;
+}
+
+.parsley-required, .parsley-type {
   color: red;
   list-style-type: none;
   font-size: 12px;
