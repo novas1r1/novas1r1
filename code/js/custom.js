@@ -61,6 +61,7 @@ $('.animateskillmeters').click(function(){
 
 //validation
 
+
 // Generate a simple captcha
 function randomNumber(min, max) {
 	return Math.floor(Math.random() * (max - min + 1) + min);
@@ -77,14 +78,22 @@ feedbackIcons: {
 	validating: 'glyphicon glyphicon-refresh'
 },
 submitHandler: function(validator, form, submitButton) {
+	var data = $('#contactForm').serialize();
+	$.ajax({
+		type: "POST",
+		url:"content/contact-form-submission.php",
+		data: data,
+		success:function(result){
             // Show the modal
             $('#success-popup')
-                .find('.alert').html('Thanks :)!').end()
-                .modal('show');
+            .find('.alert').html('Thanks !').end()
+            .modal('show');
 
             $('#contactForm')
                 .bootstrapValidator('disableSubmitButtons', false)  // Enable the submit buttons
                 .bootstrapValidator('resetForm', true);             // Reset the form
+            }
+    });
 },
 fields: {
 	inputName: {
