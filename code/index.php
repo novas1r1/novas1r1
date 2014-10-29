@@ -1,9 +1,10 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="Content-Language" content="en">
 	<meta name="description" content="Welcome to the portfolio of Verena Zaiser, Software Developer living in Stuttgart.">
-	<meta name="keywords" content="verena zaiser, freelancer programming, software developer, game developer, game programmer, android developer">
+	<meta name="keywords" content="verena zaiser, freelancer programming, software developer, game developer, game programmer, android development, mobile development">
 	<meta name="author" content="Verena Zaiser">
 
 	<title>Portfolio of Verena Zaiser</title>
@@ -13,12 +14,10 @@
 
 	<link rel="stylesheet" type="text/css" href="//bootswatch.com/superhero/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/bootstrapValidator.min.css"/>
-	
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrapValidator.min.css"/> -->
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/parsley.min.js"></script>
-
 </head>
 <body>
 	<!-- header -->
