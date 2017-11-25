@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-	<link rel="stylesheet" type="text/css" href="//bootswatch.com/superhero/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrapValidator.min.css"/> -->
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
