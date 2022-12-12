@@ -9,8 +9,8 @@ Built my first website over 20 years ago, I love coding, I love Flutter <3! I've
 * 🌍  I'm based in Stuttgart, Germany
 * ✉️  You can contact me at [hello@verena-zaiser.de](mailto:hello@verena-zaiser.de)
 * 🚀  I'm currently working on [Drumbitious - A Drum Practice App](http://drumbitious.com)
-* 🤝  And also working on [Social Income - A Social NGO Project]([http://drumbitious.com](https://www.brandforce.com/domain/socialincome.com/))
-* 💙  I'm open to collaborating on Open-Source Projects built with Flutter
+* 🤝  Also working on [Social Income - A Social NGO Project]([http://drumbitious.com](https://www.brandforce.com/domain/socialincome.com/))
+* 💙  I'm open to collaborating on Open-Source projects built with Flutter
 
 <a href="https://www.twitter.com/verry_codes" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/twitter/follow/verry_codes?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917"
