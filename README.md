@@ -7,8 +7,8 @@ Freelance Flutter Developer
 Built my first website over 20 years ago, I love coding, I love Flutter <3! I've been through various projects in different languages
 
 * 🌍  I'm based in Stuttgart, Germany
-* ✉️  You can contact me at [hello@verena-zaiser.de](mailto:hello@verena-zaiser.de)
-* 🚀  I'm currently working on [Drumbitious - A Drum Practice App](http://drumbitious.com)
+* ✉️  You can contact me via [verena-zaiser.de](https://verena-zaiser.de)
+* 🚀  I'm currently working on [Drumbitious - A Drum Practice App](https://drumbitious.com) and [RepeatLab - Audio Looper](https://repeatlab.netlify.app)
 * 🤝  Also working on [Social Income - A Social NGO Project]([http://drumbitious.com](https://www.brandforce.com/domain/socialincome.com/))
 * 💙  I'm open to collaborating on Open-Source projects built with Flutter
 
